@@ -1,0 +1,72 @@
+.top{
+    text-align: center;
+    border-style:hidden;
+    border-color: transparent;
+    color: black;
+    font-family: Verdana;
+    
+}
+
+.logo{
+    width: 200px;
+    
+}
+
+.center{
+    color:white;
+    background-color: black;
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    
+}
+
+.nav-link{
+    color: white;
+    font-size: 35px;
+    font-family:georgia black;
+    text-align: center;
+    padding-right: 50px;
+    
+}
+
+.nav-link:hover{
+    color: grey;
+}
+.sobre{
+    color:white;
+    font-family: Times;
+    font-size: 25px;
+    
+}
+.contato{
+    color: white;
+    text-align: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+.since{
+    padding-top: 9px;
+    padding-left: 30px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family:georgia black;
+}
+.corte{
+   width: 250px;
+   height: 250px;
+
+}
+.barba{
+    width: 250px;
+   height: 250px;
+
+}
+.combo{
+    width: 250px;
+   height: 250px;
+
+}

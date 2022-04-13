@@ -1,0 +1,10 @@
+body{
+	/*background-image: url("./assets/imagens/fundo.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    /* margin: 5px; */
+    height: 80%;
+    background-color: black;
+    
+}   

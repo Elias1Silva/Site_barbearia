@@ -1,0 +1,192 @@
+<section>
+  <div class="container-fluid top">
+    <div class="container d-flex align-items-center p-3">
+      <img src="./../assets/imagens/Careca.png" alt="" class="logo">
+      <h1 class="mx-auto"></h1>
+      <ul class="nav">
+        <a href="" class="nav-link">
+          <li>Home</li>
+        </a>
+        <a href="#sobre" class="nav-link">
+          <li>Sobre Nós</li>
+        </a>
+        <a href="#servicos" class="nav-link">
+          <li>Serviços</li>
+        </a>
+        <a href="#contato" class="nav-link">
+          <li>Contato</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
+        aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img
+          src=" https://images.unsplash.com/photo-1512864084360-7c0c4d0a0845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1570&h=600&q=80"
+          alt="">
+      </div>
+
+      <div class="carousel-item active carousel-item-start">
+        <img
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyYmVyJTIwc2hvcHxlbnwwfDB8MHx8&auto=format&fit=crop&w=1700&h=600&q=80"
+          alt="">
+      </div>
+
+      <div class="carousel-item carousel-item-next carousel-item-start">
+        <img
+          src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&h=600&q=80"
+          alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+
+
+
+<div class="sobre" id="sobre">
+  <section>
+    <div class="container">
+      <div class="center">
+        <h1> Sobre a barbearia Careca</h1>
+
+        <p>Temos uma linha completa de produtos para o seu cabelo e barba
+          Enquanto aguarda um atendimento, desfrute de todas as vantagens de lazer como: videogame, cadeira de massagem
+          ou
+          openbar, é só escolher e relaxar.
+        </p>
+        <BR>
+        <p>Na Barbearia Careca, todo o seu consumo vale créditos para você trocar por serviços e descontos.
+          Profissionais treinados e capacitados. Temos um controle rigoroso de qualidade quanto aos profissionais em
+          nossas
+          unidades Atendimento, cuidado e bem-estar.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div>
+  <img
+    src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&h=600&q=80">
+</div>
+
+<div class="servico" id="servicos">
+  <section>
+    <div class="container">
+      <div class="center">
+
+        <h1> Serviços oferecidos</h1>
+
+        <br>
+        <br>
+
+        <div class="row text-center">
+
+          <div class="col bg-warning mx-5 py-5">
+            <img src="./../assets/imagens/corte.png" class="corte">
+            <h1>Corte</h1>
+          </div>
+
+          <div class="col bg-warning mx-5 py-5">
+            <img src="./../assets/imagens/barba.png" class="barba">
+            <h1>Barba</h1>
+          </div>
+
+          <div class="col bg-warning mx-5 py-5">
+            <img src="./../assets/imagens/combo.png" class="combo">
+            <h1>Combo</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container text-white">
+  <h2>Lista de Clientes</h2>
+  <div class="jus">
+    <table class="table table-white  text-white">
+      <thead>
+        <tr>
+          <th class="px-5" scope="col"># Fila</th>
+          <th class="px-5" scope="col">Nome</th>
+          <th class="px-5" scope="col">Serviço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of fila; let i = index">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{ c.cliente }}</td>
+          <td>{{ (c.servico == 0? 'Cabelo':(c.servico==1?'Barba':'Combo') ) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="contato" id="contato">
+  <section>
+    <div class="container">
+      <div class="center">
+        <h1>Entre em contato conosco</h1>
+
+        <a href="http://facebook.com" target="_blank">
+          <img src="https://cdn.icon-icons.com/icons2/2037/PNG/512/facebook_fb_media_social_icon_124262.png" height="40"
+            width="40">
+        </a>
+
+        <a href="http://instagram.com" target="_blank">
+          <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png" height="50" width="50">
+        </a>
+
+        <a href="http://whatsapp.com" target="_blank">
+          <img src="https://cdn.icon-icons.com/icons2/41/PNG/128/whichapplication_conversation_email_phone_7097.png"
+            height="40" width="40">
+        </a>
+
+
+        <br>
+        <br>
+        <div class="d-flex justify-content-center">
+          <ul class="nav">
+            <a href="" class="nav-link">
+              <li>Home</li>
+            </a>
+            <a href="#sobre" class="nav-link">
+              <li>Sobre Nós</li>
+            </a>
+            <a href="" class="nav-link">
+              <li>Serviços</li>
+            </a>
+            <a href="#contato" class="nav-link">
+              <li>Contato</li>
+            </a>
+          </ul>
+        </div>
+
+        <br>
+        <h5> Copyright 2022 – Barbearia Careca. Todos os direitos reservados.</h5>
+      </div>
+    </div>
+  </section>
+</div>
